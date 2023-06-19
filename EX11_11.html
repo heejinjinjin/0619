@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('body').click(function() {
+                $('.drawer-menu').slideToggle();
+                $('.drawer').toggleClass('red-background');
+            });
+        });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .drawer {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: gray;
+            transition: background-color 0.3s ease;
+        }
+
+        .drawer.red-background {
+            background-color: gray;
+        }
+
+        .drawer h1 {
+            height: 50px;
+        }
+
+        .drawer-menu {
+            display: none;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        .content {
+            padding: 10px;
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="drawer">
+        <h1>Logo</h1>
+        <div class="drawer-menu">
+            <p>Exxe pariatur</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus amet mollitia ullam aliquam nemo dolorum perferendis sit minus esse, illum ut earum officia consequatur repudiandae! Accusantium non odio veritatis autem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quisquam, error doloremque explicabo quis voluptate, quasi ex sint ipsam voluptatibus nostrum perferendis cupiditate harum autem eaque odit recusandae eius id?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti eveniet et non dignissimos veniam ad repellat? Impedit recusandae maiores eius. Quia necessitatibus eius ducimus perspiciatis consequatur harum accusantium illo esse.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit numquam omnis architecto eius repellat obcaecati, sequi inventore et facere cum, culpa rerum odio voluptate dignissimos assumenda, sapiente voluptates at labore.</p>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Lorem ipsum</h1>
+        <p>Magna et excepteur minim</p>
+        <p>qui do proident consequat</p>
+        <p>Aliquip ew qui ea ut</p>
+        <p>Duis fugiat adipisicing</p>
+    </div>
+</body>
+</html>
